@@ -1,0 +1,59 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TUT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .product-card {
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .add-to-cart { background: #4CAF50; color: white; }
+        .buy-now { background: #2196F3; color: white; }
+        .favorite { background: #ff4444; color: white; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">TUT</a>
+            
+    </div>
+        <div class="nav-links">
+            <a href="home.html">Мо</a>
+            <a href="categories.html">Категорияҳо</a>
+            <a href="products.html">Маҳсулотҳо</a>
+            <a href="cart.html">Карта</a>
+            <a href="login.html">Воридшави</a>
+            <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <section class="products" style="padding: 6rem 2rem;">
+        <h2>Маҳсулотҳои пешниҳодшуда</h2>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <script src="products.js"></script>
+</body>
+</html>

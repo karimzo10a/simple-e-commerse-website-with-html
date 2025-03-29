@@ -1,0 +1,54 @@
+<!-- buy-monitor.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Monitor - E-Shop</title>
+    <link rel="stylesheet" href="D:\sites\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .buy-container {
+            max-width: 600px;
+            margin: 6rem auto;
+            padding: 2rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+        img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">E-Shop</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login/Register</a>
+            <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <section class="buy">
+        <div class="buy-container">
+            <h2>Purchase Monitor</h2>
+            <img src="https://via.placeholder.com/200" alt="Monitor">
+            <p>Price: $249</p>
+            <form>
+                <input type="text" placeholder="Shipping Address" required>
+                <input type="text" placeholder="Payment Method" required>
+                <button type="submit">Confirm Purchase</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="buy-monitor.js"></script>
+</body>
+</html>
